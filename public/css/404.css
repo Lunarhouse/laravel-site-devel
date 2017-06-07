@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-size: 17px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
+
+#image {
+    margin-top: 40px;
+    clear: both;
+}
+
+#content {
+    margin-top: 40px;
+
+}
+
+#content .list {
+    padding: 15px 0 15px 40px;
+}
+
+#content .list li {
+    list-style-type: disc;
+}
+
+
+#content a {
+    text-decoration: none;
+    color: #1f648b;
+    font-size: 20px ;
+
+}
+
+#content a:hover {
+    color: #2ca02c;
+
+}
+
+
