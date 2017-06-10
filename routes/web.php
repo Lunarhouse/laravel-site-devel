@@ -42,9 +42,8 @@ Route::group(['middleware' => 'auth'], function() {//Группа для авт�
 
 
 
-Route::get('post/{slug}', ['as' => 'show', 'uses' => 'PostController@show']); //Отображение поста
-
-//Route::get('post/{slug}', 'PostController@show')->where('slug', '^[\w\d\/-]+');
+//Route::get('post/{slug}', ['as' => 'show', 'uses' => 'PostController@show']); //Отображение поста
+Route::get('post/{slug}', 'PostController@show')->where('slug', '^[\w\d\/-]+');
 //Route::get('post/{id}', 'PostController@show')->where('id', '^(?!0)[\d]+');
 
 

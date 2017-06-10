@@ -14,7 +14,7 @@
         @foreach($posts as $post)
 
             <a href="{{action('PostController@show', [$post->slug]) }}"><h2>{{$post->artist}} - {{$post->title}} </h2></a>
-
+        {{$post->slug}}
 
             <div class="post_meta">
                 <strong>Дата публикации:</strong> {{$post->published_at}} |

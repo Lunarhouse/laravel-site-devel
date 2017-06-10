@@ -13,6 +13,7 @@ class Post extends Model
     protected $table = 'posts';
     protected $fillable = ['artist', 'title', 'content', 'slug', 'published', 'published_at'];
     protected $primaryKey = 'slug';
+    public $incrementing = FALSE; //Отключаем автоинкремент у $primaryKey
 
     use Sluggable;
 
